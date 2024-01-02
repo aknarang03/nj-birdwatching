@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/recentSightingsMap"
+        android:name="edu.monmouth.cs250.s1328134.njbirdwatching.RecentSightingsMap"
+        android:label="fragment_recent_sightings_map"
+        tools:layout="@layout/fragment_recent_sightings_map" />
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="edu.monmouth.cs250.s1328134.njbirdwatching.ItemFragment"
+        android:label="fragment_item_list"
+        tools:layout="@layout/fragment_item_list" />
+</navigation>
